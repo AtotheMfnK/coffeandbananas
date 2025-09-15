@@ -1,0 +1,42 @@
+.intro {
+    display: flex;
+    flex-direction: column;
+    max-width: 80%;
+    align-items: center;
+    color: var(--pink-for);
+    margin: auto;
+    padding: 3.4rem;
+}
+
+.sectionOne {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 12em;
+}
+.sectionOne h3 {
+    color: black;
+    font-size: 3.5em;
+}
+
+@media (max-width: 600px) {
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    max-width: 80%;
+    align-items: center;
+    color: var(--pink-for);
+    margin: auto;
+    padding: 3.4rem;
+}
+.sectionOne {
+    margin-top: 2em;
+    text-align: center;
+}
+
+.sectionOne h3 {
+    font-size: 1.6rem;;
+}
+}

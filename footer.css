@@ -1,0 +1,72 @@
+.footer {
+    display: flex;
+    position: absolute;
+    flex-flow: wrap-reverse;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--green-for);
+    color: black;
+    width: 100%;
+    min-height: 30vh;
+  }
+  
+  .footer > * {
+    flex-grow: 1;
+    flex-basis: 15%;
+    justify-content: center;
+    max-width: 30%; /* Prevents the child from growing larger than 45% */
+    min-width: 20rem;
+    text-decoration: none;
+  }
+  
+
+  .footer__company {
+    text-align: center;
+  }
+  
+  .footer__company ul {
+    list-style-type: none;
+  }
+
+  .footer__company li {
+    list-style-type: none;
+    transform: translateX(-20px);
+  }
+
+  .footer__company a img{
+    width: 200px;
+    list-style-type: none;
+    transform: translateY(10px);
+  }
+
+  svg {
+    width: 4rem;
+    height: 4rem;
+    background-color: white;
+  }
+  #Facebook_32 #Twitter_Circled_32 #linkedIn32_ #Instagram_32 {
+    color: white;
+  }
+
+
+  @media (max-width: 600px) {
+
+  .footer {
+      justify-content: space-around;
+      align-items: start;
+      width: 100%;
+      height: 20vh;
+    }
+    
+  .footer__company h2 {
+    display: none;
+    row-gap: 1rem;
+  }
+  .footer__company li {
+    padding-top: 1rem;
+  }
+  .footer__company a img{
+    width: 100px;
+    transform: translateX(20px);
+  }
+}

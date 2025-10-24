@@ -1,0 +1,115 @@
+.hero {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: 100vw;
+    height: 90vh;
+    justify-content: start;
+    align-items: center;
+    background-image: url('img/coffee...andbananas.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: -150%;
+    margin: auto;
+    transform: translateY(50px);
+}
+
+.hero > div{
+     background-color: black;
+     color: white;
+     width: 45%;
+     padding: 0 30px;
+}
+
+.hero h1 {
+    font-size: 5em;
+    padding: 2px 2px;
+    margin: 0 auto;
+    /* background-color: var(--grey-for); */
+    /* transform: translateY(-80px); */
+    animation: enlargeH1 5s ease-in-out forwards;
+}
+
+.intro-header {
+    transform: translateY(-50px);
+}
+
+.intro-header p {
+    color: white;
+    font-family: 'ZeitungPro-Black-_1_';
+    font-size: 6rem;
+    transform: translateY(-50px);
+}
+
+@keyframes enlargeH1 {
+    0% {
+        font-size: 15rem;
+    }
+
+    100% {
+        font-size: 15.5rem;
+    }
+}
+
+.heromobile {
+        display: none;
+        position: relative;
+        flex-direction: column;
+        max-width: 100vw;
+        height: 34rem;
+        justify-content: center;
+        align-items: center;
+        background-image:  url('img/coffee...andbananas.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+@media (max-width: 768px) {
+
+    .hero {
+        display: none;
+        position: relative;
+        flex-direction: column;
+        width: 100vw;
+        justify-content: center;
+        align-items: center;
+        background-image: url('');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .heromobile {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        max-width: 100vw;
+        height: 34rem;
+        justify-content: center;
+        align-items: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        z-index: -1;
+    }
+
+    .heromobile h1 {
+        color: white;
+        font-size: 2.8rem;
+        align-self: center;
+        text-align: center;
+        padding: 20px 0px;
+        background-color: black;
+    }
+
+    .intro-header {
+    transform: translateY(50px);
+}
+
+.intro-header p {
+    color: white;
+    font-family: 'ZeitungPro-Black-_1_';
+    font-size: 2rem;
+    transform: translateY(-50px);
+}
+}

@@ -41,7 +41,7 @@
 /* #gallery img:hover {
     opacity: 1;
     transform: scale(1.5); 
-}*/ 
+}*/
 
 
 #bigImage {
@@ -114,6 +114,25 @@
 .roastJourney img {
     margin: auto;
 }
+
+
+.galleryRoastingSubsection {
+    display: flex;
+    width: 95vw;
+    border: thick;
+    border-color: black;
+    margin: 0 auto: 
+    background-color: red;
+}
+
+
+.galleryRoastingSubsection {
+  
+
+}
+
+.galleryRoastingSubsection img {}
+
 
 @media (max-width: 768px) {
 

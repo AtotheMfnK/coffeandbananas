@@ -6,23 +6,24 @@
     height: 90vh;
     justify-content: start;
     align-items: center;
-    background-image: url('img/coffee...andbananas.jpg');
+    /* background-image: url('img/coffee...andbananas.jpg'); */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: -150%;
     margin: auto;
     transform: translateY(50px);
+    margin-bottom: 8rem;
 }
 
-.hero > div{
+.CafeName{
      background-color: black;
      color: white;
-     width: 45%;
+     width: 18%;
      padding: 0 30px;
 }
 
-.hero h1 {
-    font-size: 5em;
+.CafeName h1 {
+    font-size: 5rem;
     padding: 2px 2px;
     margin: 0 auto;
     /* background-color: var(--grey-for); */
@@ -30,41 +31,58 @@
     animation: enlargeH1 5s ease-in-out forwards;
 }
 
+
+.CafeName p {
+    color: white;
+    font-family: 'ZeitungPro-Black-_1_';
+    font-size: 2rem;
+    transform: translateY(-30px);
+}
+
+
 .intro-header {
-    transform: translateY(-50px);
+    display: flex;
+    flex-direction: column;
+    transform: translateY(50px);
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.intro-header h3 {
+  font-size: 10em;
+  text-align: center;
+  line-height: 10rem;
 }
 
 .intro-header p {
+  font-size: 2rem;
+}
+
+
+.intro-header a {
+    background-color: chocolate;
+    padding: 10px;
+    border-radius: 8px;
     color: white;
     font-family: 'ZeitungPro-Black-_1_';
-    font-size: 6rem;
-    transform: translateY(-50px);
+    text-decoration: none;
 }
 
-@keyframes enlargeH1 {
-    0% {
-        font-size: 15rem;
-    }
-
-    100% {
-        font-size: 15.5rem;
-    }
-}
 
 .heromobile {
         display: none;
         position: relative;
         flex-direction: column;
         max-width: 100vw;
-        height: 34rem;
+        height: 25rem;
         justify-content: center;
         align-items: center;
-        background-image:  url('img/coffee...andbananas.jpg');
+        background-image:  white;
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
     }
-@media (max-width: 768px) {
+@media (max-width: 780px) {
 
     .hero {
         display: none;
@@ -79,12 +97,11 @@
         background-position: center;
     }
 
-    .heromobile {
+.heromobile {
         display: flex;
         position: relative;
         flex-direction: column;
         max-width: 100vw;
-        height: 34rem;
         justify-content: center;
         align-items: center;
         background-size: cover;
@@ -93,23 +110,53 @@
         z-index: -1;
     }
 
-    .heromobile h1 {
+
+.heromobile h1 {
         color: white;
         font-size: 2.8rem;
         align-self: center;
         text-align: center;
-        padding: 20px 0px;
+        padding: 5px 15px 20px 12px;
         background-color: black;
     }
-
-    .intro-header {
-    transform: translateY(50px);
-}
-
-.intro-header p {
+.heromobile p{
     color: white;
     font-family: 'ZeitungPro-Black-_1_';
-    font-size: 2rem;
-    transform: translateY(-50px);
+    font-size: 1.5rem;
+    transform: translateY(-37px);
 }
+
+
+.introHeaderMobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-transform: uppercase;
+     transform: translateY(30px);
+     background-color: rgba(255, 255, 255, 0.8);
+     padding-bottom: 25px;
+}
+
+.introHeaderMobile h3 {
+  font-size: 1rem;
+  text-align: center;
+  transform: translateY(-30px)
+}
+
+.introHeaderMobile p {
+    font-family: 'ZeitungPro-Black-_1_';
+    font-size: 1.25rem;
+    color: black;
+}
+
+
+.introHeaderMobile a {
+    background-color: chocolate;
+    padding: 1px;
+    border-radius: 8px;
+    font-family: 'ZeitungPro-Black-_1_';
+    text-decoration: none;
+    color: black;
+}
+
 }

@@ -11,16 +11,55 @@
 .sectionOne {
     display: flex;
     width: 100%;
+    align-items: center;
     justify-content: center;
     flex-wrap: wrap;
     margin-top: 12em;
-}
-.sectionOne h3 {
-    color: black;
-    font-size: 3.5em;
+    flex-direction: column;
 }
 
-@media (max-width: 600px) {
+
+.sectionOne h3 {
+    color: black;
+    font-size: 4.5em;
+}
+
+.sectionOne p {
+padding-top: 4rem;
+}
+
+.sectionOne a {
+background-color: red;
+padding: 2rem;
+border-radius: 8px;
+color: white;
+text-decoration: none;
+}
+
+
+.sectionOneDates {
+  display: flex;
+  justify-content: center;
+  margin-top: 2em;
+  transform: translateX(-20px);
+}
+
+.sectionOneDates li {
+ font-size: 1.8rem;
+}
+
+
+.sectionOneDates ul{
+ display: flex;
+ flex: 1 1 33%;
+ flex-wrap: wrap;
+ flex-direction: row;
+ gap: 200px;
+  margin-top: 2em;
+  font-family: 'ZeitungPro-Black-_1_';
+} 
+
+@media (max-width: 680px) {
 
 .intro {
     display: flex;
@@ -32,11 +71,41 @@
     padding: 3.4rem;
 }
 .sectionOne {
-    margin-top: 2em;
+    margin-top: 1em;
     text-align: center;
 }
 
 .sectionOne h3 {
     font-size: 1.6rem;;
 }
+
+.sectionOne p {
+    padding-top: 4rem;
+    font-size: 1rem;
+}
+
+.sectionOne a{
+background-color: red;
+padding: 2rem;
+border-radius: 8px;
+color: white;
+text-decoration: none;
+}
+
+.sectionOneDates {
+  margin-top: 4rem;
+  justify-content: center;
+}
+
+.sectionOneDates ul {
+     justify-content: center;
+     margin-top: 0;
+     gap: 20px;
+}
+
+.sectionOneDates li {
+    padding-top: 0px;
+    margin: 0px;
+}
+
 }

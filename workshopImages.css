@@ -1,0 +1,38 @@
+.workshopImages  {
+ display: flex;
+ width: 95vw;
+ border: thick;
+ margin: 0 auto;
+ height: 40rem;
+ padding-top: 10rem;
+ gap: 1rem;
+}
+
+.workshopImages img {
+    object-fit: cover;
+    width: 19%;
+}
+
+@media (max-width: 768px){
+
+.workshopImages  {
+ display: flex;
+ flex-basis: 1 1 33%;
+ width: 100vw;
+ border: thick;
+ margin: 0 auto;
+ height: 200px;
+padding-top: 1rem;
+ justify-content: center;
+ gap: 0.2rem;
+}
+
+.workshopImages img {
+    flex-wrap: wrap;
+    object-fit: cover;
+    width: 20%;
+    flex-basis: 1 1 25%;
+   
+}
+
+  }

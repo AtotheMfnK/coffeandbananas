@@ -27,7 +27,7 @@
   /* animation-name: bannerslide;
     animation-duration: infinite;
     animation-direction: reverse; */
-  animation: bannerslide-one 25s linear infinite;
+  animation: bannerslide-one 12s linear infinite;
 }
 
 .bannertext-one p {
@@ -37,14 +37,10 @@
 }
 
 @keyframes bannerslide-one {
-  from {
-    left: -80%;
-  }
+    from { transform: translateX(-85%); }
 
-  to {
-    left: 100%;
+    to { transform: translateX(90%); }
   }
-}
 
 .banner-two {
   height: 30em;
@@ -291,6 +287,7 @@
     overflow: hidden;
     white-space: nowrap;
     margin: 4em 0.2em;
+    padding: 2rem 0;
   }
 
   .bannertext-one {
@@ -309,7 +306,7 @@
     /* animation-name: bannerslide;
     animation-duration: infinite;
     animation-direction: reverse; */
-    animation: bannerslide-one 5s linear infinite;
+    animation: bannerslide-one 11s linear infinite;
   }
 
   .bannertext-one p {
@@ -319,15 +316,10 @@
   }
 
   @keyframes bannerslide-one {
-    from {
-      left: -80%;
-    }
+    from { transform: translateX(-62%); }
 
-    to {
-      left: 100%;
-    }
-  }
-
+    to { transform: translateX(55%); }
+}
   .banner-two {
     width: 100vw;
     background-color: white;

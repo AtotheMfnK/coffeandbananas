@@ -89,7 +89,7 @@
 }
 
 
-.banner-three {
+/* .banner-three {
   height: 30em;
   width: 100vw;
   background-color: white;
@@ -103,7 +103,7 @@
 
 .bannertext-three {
   display: flex;
-  /* position:relative; */
+  /* position:relative; 
   width: 100%;
   background-color: var(--ath-bg-cl);
   color: var(--prime-fn-clr);
@@ -116,7 +116,7 @@
   position: absolute;
   /* animation-name: bannerslide;
     animation-duration: infinite;
-    animation-direction: reverse; */
+    animation-direction: reverse; 
   animation: bannerslide-three 25s linear infinite;
 }
 
@@ -133,8 +133,32 @@
 .bannertext-three p {
   transform: translateY(200px);
 }
+ */
 
 
+.banner-four {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 100vw;
+  background-color: black;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 8rem 0;
+  margin: 6em 0;
+}
+
+.banner-four h5 {
+  color: whitesmoke;
+  background-color: black;
+  font-size: 10rem;
+}
+
+.banner-four p {
+  color: whitesmoke;
+  font-size: 3rem;
+}
 
 
 @media (max-width: 768px) {
@@ -186,7 +210,7 @@
     background-repeat: repeat-x;
     position: relative;
     object-fit: cover;
-    overflow: visible;
+    overflow: hidden;
     white-space: nowrap;
     margin-top: 4rem;
   }
@@ -221,7 +245,7 @@
     transform: translateY(200px);
   }
 
-.banner-three {
+.banner-four {
   width: 100vw;
   background-color: white;
   background-repeat: repeat-x;
@@ -232,33 +256,28 @@
 }
 
 
-.bannertext-three {
+
+.banner-four {
   display: flex;
-  /* position:relative; */
-  width: 100%;
-  background-color: var(--ath-bg-cl);
-  color: var(--prime-fn-clr);
-  font-size: 8em;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 100vw;
+  background-color: black;
   justify-content: center;
+  text-align: center;
+  padding: 8rem 0;
+  margin: 6em 0;
 }
 
-.banner-three img {
-  height: 100%;
-  position: absolute;
-  /* animation-name: bannerslide;
-    animation-duration: infinite;
-    animation-direction: reverse; */
-  animation: bannerslide-three 7s linear infinite;
+.banner-four h5 {
+  color: whitesmoke;
+  background-color: black;
+  font-size: 10rem;
 }
 
-@keyframes bannerslide-three {
-  from {
-    left: -100%;
-  }
-
-  to {
-    left: 100%;
-  }
+.banner-four p {
+  color: whitesmoke;
+  font-size: 3rem;
 }
 
 .bannertext-three p {

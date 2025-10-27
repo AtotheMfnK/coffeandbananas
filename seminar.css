@@ -11,14 +11,14 @@
 
 .seminarGalleryRoastingSubsection {
     display: flex;
-    width: 80%;
+    width: 85%;
     justify-content: center;
     flex-wrap: wrap;
     margin: 0 auto;
 }
 
 .seminarGalleryRoastingSubsection img {
-    width: 15%;
+    width: 16%;
 
 }
 
@@ -64,7 +64,7 @@
 
     .seminarGalleryRoasting {
         display: flex;
-        width: 95vw;
+        width: 100vw;
         flex-direction: row;
         border: thick;
         border-color: black;
@@ -74,14 +74,14 @@
 
     .seminarGalleryRoastingSubsection {
         display: flex;
-        width: 80%;
+        width: 100%;
         justify-content: center;
         flex-wrap: wrap;
         margin: 0 auto;
     }
 
     .seminarGalleryRoastingSubsection img {
-        width: 15%;
+        width: 25%;
 
     }
 
@@ -113,7 +113,7 @@
 
 
 .Hinweis p {
-    font-size: 1.5em;
+    font-size: 1rem;
     }
 
 
@@ -122,9 +122,11 @@
         text-align: center;
         width: 50%;
         margin: 0 auto;
-        padding: 100px 0;
+        padding: 4px 0;
     }
+
 .Buchungstext h4 {
-font-size: 1rem;
+font-size: 0.8rem;
+
     }
 }

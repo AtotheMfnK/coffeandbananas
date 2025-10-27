@@ -1,11 +1,11 @@
 .seminarGalleryRoasting {
     display: flex;
+    position: relative;
     width: 95vw;
     flex-direction: row;
     border: thick;
     border-color: black;
     margin: 0 auto;
-    background-color: red;
 }
 
 
@@ -35,6 +35,23 @@
     width: 25%;
 }
 
+.Hinweis {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    width: 50%;
+    z-index: 1000;
+    background-color: rgba(165, 42, 42, 0.7);
+    /* braun mit 70% Deckkraft */
+    padding: 10px 20px;
+    color: white;
+    transform: translateX(50%) translateY(-250px);
+}
+
+.Hinweis p {
+    font-size: 2.5em;
+}
+
 .Buchungstext {
     display: flex;
     text-align: center;
@@ -44,5 +61,70 @@
 }
 
 @media screen and (max-width:750px) {
-    
+
+    .seminarGalleryRoasting {
+        display: flex;
+        width: 95vw;
+        flex-direction: row;
+        border: thick;
+        border-color: black;
+        margin: 0 auto;
+    }
+
+
+    .seminarGalleryRoastingSubsection {
+        display: flex;
+        width: 80%;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 0 auto;
+    }
+
+    .seminarGalleryRoastingSubsection img {
+        width: 15%;
+
+    }
+
+    .seminarGalleryRoastingKalenderBelow {
+        display: flex;
+        flex-basis: 25%;
+    }
+
+    .seminarGalleryRoastingKalenderBelowImages {
+        flex-shrink: 1;
+    }
+
+    .seminarGalleryRoastingKalenderBelow img {
+        width: 25%;
+    }
+
+ .Hinweis {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    width: 50%;
+    z-index: 1000;
+    background-color: rgba(165, 42, 42, 0.7);
+    /* braun mit 70% Deckkraft */
+    padding: 10px 20px;
+    color: white;
+    transform: translateX(50%) translateY(-250px);
+}
+
+
+.Hinweis p {
+    font-size: 1.5em;
+    }
+
+
+.Buchungstext {
+        display: flex;
+        text-align: center;
+        width: 50%;
+        margin: 0 auto;
+        padding: 100px 0;
+    }
+.Buchungstext h4 {
+font-size: 1rem;
+    }
 }

@@ -1,6 +1,7 @@
-.seminarGalleryRoastingSubsection {
+.seminarGalleryRoasting {
     display: flex;
     width: 95vw;
+    flex-direction: row;
     border: thick;
     border-color: black;
     margin: 0 auto;
@@ -9,15 +10,39 @@
 
 
 .seminarGalleryRoastingSubsection {
-  
-
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
 }
 
 .seminarGalleryRoastingSubsection img {
-
+    width: 15%;
 
 }
 
-.seminarKalenderWidget{
+.seminarGalleryRoastingKalenderBelow {
+    display: flex;
+    flex-basis: 25%;
+}
+
+.seminarGalleryRoastingKalenderBelowImages {
+    flex-shrink: 1;
+}
+
+.seminarGalleryRoastingKalenderBelow img {
+    width: 25%;
+}
+
+.Buchungstext {
+    display: flex;
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+
+@media screen and (max-width:750px) {
     
 }

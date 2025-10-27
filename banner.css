@@ -134,144 +134,7 @@
   transform: translateY(200px);
 }
 
-.banner-four {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  width: 100vw;
-  background-color: black;
-  justify-content: center;
-  text-align: center;
-  padding: 8rem 0;
-  margin: 6em 0;
-}
 
-.banner-four h5 {
-  color: whitesmoke;
-  background-color: black;
-  font-size: 10rem;
-}
-
-.banner-four p {
-  color: whitesmoke;
-  font-size: 3rem;
-}
-
-.banner-five {
-  height: 25rem;
-  width: 100%;
-  position: relative;
-  object-fit: cover;
-  margin-top: 6rem;
-}
-
-.banner-five img {
-  width: 100%;
-}
-
-
-.banner-six {
-  height: 30em;
-  width: 100vw;
-  background-color: white;
-  background-repeat: repeat-x;
-  position: relative;
-  object-fit: cover;
-  overflow: hidden;
-  white-space: nowrap;
-  margin: auto;
-}
-
-
-.bannertext-six {
-  display: flex;
-  /* position:relative; */
-  width: 100%;
-  background-color: var(--ath-bg-cl);
-  color: var(--prime-fn-clr);
-  font-size: 8em;
-  justify-content: center;
-}
-
-.banner-six img {
-  height: 100%;
-  position: absolute;
-  /* animation-name: bannerslide;
-    animation-duration: infinite;
-    animation-direction: reverse; */
-  animation: bannerslide-six 30s linear infinite;
-}
-
-@keyframes bannerslide-six {
-  from {
-    left: 50%;
-  }
-
-  to {
-    left: -50%;
-  }
-}
-
-
-.bannertext-seven {
-  display: flex;
-  /* position:relative; */
-  width: 100%;
-  background-color: white;
-  color: var(--prime-fn-clr);
-  font-size: 8em;
-  justify-content: center;
-}
-
-.banner-seven img {
-  height: 100%;
-  position: absolute;
-  /* animation-name: bannerslide;
-      animation-duration: infinite;
-      animation-direction: reverse; */
-  animation: bannerslide-seven 30s linear infinite;
-}
-
-@keyframes bannerslide-six {
-  from {
-    left: 30%;
-  }
-
-  to {
-    left: -50%;
-  }
-}
-
-
-
-.bannertext-eight {
-  display: flex;
-  /* position:relative; */
-  width: 100%;
-  background-color: white;
-  color: var(--prime-fn-clr);
-  font-size: 8em;
-  justify-content: center;
-}
-
-.banner-eight img {
-  height: 100%;
-  position: absolute;
-  /* animation-name: bannerslide;
-        animation-duration: infinite;
-        animation-direction: reverse; */
-  animation: bannerslide-six 30s linear infinite;
-}
-
-@keyframes bannerslide-eight {
-  from {
-    left: 70%;
-  }
-
-  to {
-    left: -50%;
-  }
-}
 
 
 @media (max-width: 768px) {
@@ -318,12 +181,12 @@
     to { transform: translateX(55%); }
 }
   .banner-two {
-    width: 100vw;
+    width: 100%;
     background-color: white;
     background-repeat: repeat-x;
     position: relative;
     object-fit: cover;
-    overflow: hidden;
+    overflow: visible;
     white-space: nowrap;
     margin-top: 4rem;
   }
@@ -337,24 +200,22 @@
     justify-content: center;
   }
 
-  .banner-two img {
+.banner-two img {
     height: 100%;
+    width: 100;
     position: relative;
-    /* animation-name: bannerslide;
-    animation-duration: infinite;
-    animation-direction: reverse; */
-    animation: bannerslide-two 4s linear infinite;
-  }
+    animation: bannerslide-two 12s linear infinite;
+}
 
-  @keyframes bannerslide-two {
+@keyframes bannerslide-two {
     from {
-      left: 10%;
+        transform: translateX(45%);
     }
-
     to {
-      left: -100%;
+        transform: translateX(-50%);
     }
-  }
+}
+
 
   .bannertext-two p {
     transform: translateY(200px);

@@ -74,13 +74,10 @@
 }
 
 @keyframes bannerslide-two {
-  from {
-    left: 1%;
-  }
+  from { transform: translateX(85%); }
 
-  to {
-    left: -100%;
-  }
+    to { transform: translateX(-90%); }
+  
 }
 
 .bannertext-two p {

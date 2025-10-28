@@ -9,6 +9,7 @@
 .NikoausroastingInhalt {
     width: auto;
     background-color: rgba(0, 0, 0, 0.5);
+    padding: 36px 0;
 }
 
 .innertext p {
@@ -20,26 +21,26 @@
     font-size: 3rem;
 }
 
-@media screen and (max-width: 778px)  {
-.innertext {
-    display: flex;
-    width: 90%;
-    flex-direction: column;
-    text-align: center;
-    margin: 0 auto;
-}
+@media screen and (max-width: 778px) {
+    .innertext {
+        display: flex;
+        width: 90%;
+        flex-direction: column;
+        text-align: center;
+        margin: 0 auto;
+    }
 
-.NikoausroastingInhalt {
-    width: auto;
-    background-color: rgba(0, 0, 0, 0.5);
-}
+    .NikoausroastingInhalt {
+        width: auto;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
 
-.innertext p {
-    font-size: 1rem;
-    color: white;
-}
+    .innertext p {
+        font-size: 1rem;
+        color: white;
+    }
 
-.NikoausroastingInhalt:nth-last-of-type {
-    font-size: 1.5rem;
-}
+    .NikoausroastingInhalt:nth-last-of-type {
+        font-size: 1.5rem;
+    }
 }

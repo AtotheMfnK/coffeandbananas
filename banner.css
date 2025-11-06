@@ -67,21 +67,15 @@
 .banner-two img {
   height: 100%;
   position: absolute;
-  /* animation-name: bannerslide;
-    animation-duration: infinite;
-    animation-direction: reverse; */
-  animation: bannerslide-two 17s linear infinite;
+  animation: bannerslide-two 14s linear infinite;
 }
 
 @keyframes bannerslide-two {
-  from {
-    left: 1%;
+    from { transform: translateX(-85%); }
+
+    to { transform: translateX(90%); }
   }
 
-  to {
-    left: -100%;
-  }
-}
 
 .bannertext-two p {
    flex-direction: column;
@@ -406,7 +400,6 @@
 .bannertext-three p {
   transform: translateY(200px);
 }
-
 
 
 .banner-four{

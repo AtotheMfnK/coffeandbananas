@@ -1,23 +1,53 @@
-.seminarGalleryRoastingSubsection {
+.seminarGalleryRoasting {
     display: flex;
+    flex-wrap: wrap;
     width: 95vw;
     border: thick;
     border-color: black;
     margin: 0 auto;
     background-color: red;
+    height: 100vh;
 }
 
 
 .seminarGalleryRoastingSubsection {
-  
-
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    /* falls du mehrere Bilder hast */
+    justify-content: center;
+    align-items: center;
+    background-color: black;
 }
 
 .seminarGalleryRoastingSubsection img {
-
-
+    width: 15%;
+    margin: 1px;
+    border: 2px;
+    border-color: black;
 }
 
-.seminarKalenderWidget{
-    
+.seminarKalenderWidget {
+    flex-basis: 25vw;
+    flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+
+    .seminarGalleryRoasting {
+        flex-direction: column;
+    }
+
+    .seminarGalleryRoastingSubsection {
+        flex-basis: 100%;
+    }
+
+    .seminarGalleryRoastingSubsection img {
+        width: 15%;
+    }
+
+    .seminarKalenderWidget {
+        flex-basis: 100%;
+    }
+
 }

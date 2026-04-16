@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Private Breakfast Berlin">
+    <meta name="keywords" content="Private Breakfast in Prenzlauer Berg">
+    <meta name="author" content="Angelo Hey">
+    <title>Private_Breakfast</title>
+
+    <link rel="stylesheet" a href="root.css" />
+    <link rel="stylesheet" a href="style.css" />
+    <link rel="stylesheet" a href="fontstyle.css" />
+    <link rel="stylesheet" a href="nav.css" />
+    <link rel="stylesheet" a href="footer.css" />
+    <link rel="stylesheet" a href="hero.css" />
+    <link rel="stylesheet" a href="intro.css" />
+    <link rel="stylesheet" a href="banner.css" />
+    <link rel="stylesheet" a href="seminar.css" />
+    <!-- <link rel="stylesheet" a href="gallery.css" /> -->
+    <link rel="stylesheet" a href="resizegallery.css" />
+    <link rel="stylesheet" a href="location.css" />
+    <link rel="stylesheet" a href="carousel.css" />
+    <link rel="stylesheet" a href="privatebreakfast.css" />
+
+</head>
+
+
+
+<body>
+    <nav class="top-nav">
+        <!-- <img class="logo" src="img/TenFarmersLogoWeiss.png" /> -->
+        <input id="menu-toggle" type="checkbox" />
+        <label class='menu-button-container' for="menu-toggle">
+            <div class='menu-button'></div>
+        </label>
+        <ul class="menu">
+            <li><a target="_blank" href="index.html">home</a></li>
+            <li><a target="_blank" href="menue.html">menu</a></li>
+            <li><a target="_blank" href="seminar.html">seminar</a></li>
+            <li><a href="location.html">contact</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <h3>Private Breakfast im Coffee and Banananas</h3>
+        <p>Brunchen und genießen</p>
+        <ul class="private-liste">
+            <li>gesundheitsbewusst</li>
+            <li>vegan</li>
+            <li>optionale Zusätze</li>
+            <li>frisch</li>
+            <li>diskret und doch mitten im Leben</li>
+            <li>kein Verkehr</li>
+            <li>Panorama-Fenster</li>
+        </ul>
+    </section>
+
+    <section>
+        <button>book here</button>
+    </section>
+
+    <section>
+        <h4>Bilder </h4>
+        <img src="img/PrivateBreakfastPicture.jpg" alt="Private Breakfast Bild 1" />
+    </section>
+
+   <section>
+       <h4>Kontaktformular</h4>
+       <p>
+        Sie möchten ein Private Breakfast buchen oder haben Fragen? Kontaktieren Sie uns gerne über das folgende Formular.
+   </section>
+    <form action="submit_form.php" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+
+</html>

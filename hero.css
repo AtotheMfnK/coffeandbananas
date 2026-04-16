@@ -16,8 +16,7 @@
 }
 
 .CafeName{
-     background-color: black;
-     color: white;
+     color: black;
      width: 18%;
      padding: 0 30px;
 }
@@ -26,14 +25,13 @@
     font-size: 5rem;
     padding: 2px 2px;
     margin: 0 auto;
-    /* background-color: var(--grey-for); */
-    /* transform: translateY(-80px); */
     animation: enlargeH1 5s ease-in-out forwards;
+    color: black;
 }
 
 
 .CafeName p {
-    color: white;
+    color: black;
     font-family: 'ZeitungPro-Black-_1_';
     font-size: 2rem;
     transform: translateY(-30px);
@@ -52,10 +50,12 @@
   font-size: 10em;
   text-align: center;
   line-height: 10rem;
+  color: black;
 }
 
 .intro-header p {
   font-size: 2rem;
+  color:black;
 }
 
 

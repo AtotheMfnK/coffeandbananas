@@ -11,9 +11,16 @@ body {
   font-family: 'ZeitungPro-Black-_1_';
   src: url('ZeitungPro-Black-_1_.ttf') format('truetype');
   font-style: normal;
-
 }
 
+p {
+  font-family: 'ZeitungPro-Black-_1_';
+  font-size: 1.2em;
+}
+
+li, button {
+  font-family: 'ZeitungPro-Black-_1_';
+}
 :root {
   --main-bg-clr: #F2DEC4;
   --prime-fn-clr: #333;

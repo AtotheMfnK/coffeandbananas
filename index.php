@@ -46,11 +46,11 @@
     </label>
 
     <ul class="menu">
-      <li><a target="_blank" href="menue.html">menu</a></li>
-      <li><a target="_blank" href="seminar.html">seminar</a></li>
-      <li><a target="_blank" href="gallery.html">gallery</a></li>
-      <li><a target="_blank" href="PrivateBreakfast.html">gallery</a></li>
-      <li><a href="#contact">contact</a></li>
+      <li><a target="_blank" href="menue.html">Menu</a></li>
+      <li><a target="_blank" href="seminar.html">Seminar</a></li>
+      <li><a target="_blank" href="gallery.html">Gallery</a></li>
+      <li><a target="_blank" href="privatebreakfast.html">Private Breakfast</a></li>
+      <li><a href="#contact">Kontakt</a></li>
     </ul>
   </nav>
 
@@ -62,8 +62,8 @@
     <div class="intro-header">
       <h3>next coffee roasting <br> workshop</h3>
        <p style="padding-top: 1rem;">RÖSTE DEINEN EIGENEN KAFFEE</p>
-      <P style="font-size: 6rem; ">18.04.26</P>
-      <p>17.30-19.30</p>
+      <P style="font-size: 6rem; ">19.04.26</P>
+      <p>10.30-12.30</p>
       <a target="_blank" href="roast.html">hier mehr erfahren</a>
   </div>
   </section>
@@ -72,9 +72,9 @@
       <p>... and bananas</p>
     <div class="introHeaderMobile">
       <h3>next coffee roasting <br> workshop</h3>
-      <p>14.03.26</p>
-      <p>11.00-13.00</p>
-      <a href="#https://tenfarmersandbananas.com/produkt/diy-kaffeeroesten-in-berlin/">Anmeldung</a>
+      <p>19.04.26</p>
+      <p>10.30-12.30</p>
+      <a href="https://tenfarmersandbananas.com/produkt/diy-kaffeeroesten-in-berlin/">Anmeldung</a>
     </div>
   </section>
   
@@ -112,12 +112,40 @@
     <h3>UPCOMING WORKSHOPS</h3>
    
    <div class="sectionOneDates"> 
-    <ul>
-      <li>Mi 15.04.2026 <br> <span style="font-size: 1.3rem">17.30-19.30</span></li>
-      <li>Do 16.04.2026 <br> <span style="font-size: 1.3rem">17.30-19.30</span></li>
-      <li>Fr 17.04.2026 <br> <span style="font-size: 1.3rem">17.30-19.30</span></li>
-      <li>Sa 18.04.2026 <br> <span style="font-size: 1.3rem">10.30-12.30</span></li>
-  </ul></div>
+ <?php
+
+echo "<ul>";
+
+$today = new DateTime();
+
+// wie viele Tage voraus anzeigen (z. B. 14 Tage)
+$daysAhead = 14;
+
+for ($i = 0; $i < $daysAhead; $i++) {
+
+    $date = clone $today;
+    $date->modify("+$i days");
+
+    $dayOfWeek = $date->format('N'); // 1=Mo ... 7=So
+
+    // deine Workshop-Tage
+    if ($dayOfWeek >= 3 && $dayOfWeek <= 5) {
+        $time = "17.30-19.30"; // Mi-Fr
+    } elseif ($dayOfWeek == 6) {
+        $time = "10.30-12.30"; // Sa
+    } else {
+        continue; // keine anderen Tage anzeigen
+    }
+
+    echo "<li>";
+    echo $date->format('D d.m.Y');
+    echo "<br><span style='font-size: 1.3rem'>$time</span>";
+    echo "</li>";
+}
+
+echo "</ul>";
+?>
+  </div>
 
 
 <p><a href="https://tenfarmersandbananas.com/produkt/diy-kaffeeroesten-in-berlin/"
